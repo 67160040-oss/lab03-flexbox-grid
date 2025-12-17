@@ -44,3 +44,137 @@
  .nav-links a:hover {
  color: #3498db;
  } 
+ .hero {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ color: white;
+ padding: 4rem 2rem;
+ text-align: center;
+ min-height: 400px;
+ }
+ .hero h1 {
+ font-size: 3rem;
+ margin-bottom: 1rem;
+ }
+ .hero p {
+ font-size: 1.2rem;
+ margin-bottom: 2rem;
+ opacity: 0.9;
+ }
+ .hero-btn {
+ background: #f39c12;
+ color: white;
+ padding: 0.8rem 2rem;
+ border: none;
+ border-radius: 5px;
+ font-size: 1rem;
+ cursor: pointer;
+ transition: background 0.3s;
+ }
+ .hero-btn:hover {
+ background: #e67e22;
+ }
+ /* Container */
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 2rem;
+ }
+ /* Main Content - Flexbox */
+ .main-content {
+ display: flex;
+ gap: 2rem;
+ margin: 3rem 0;
+ }
+ /* Sidebar */
+ .sidebar {
+ flex: 0 0 250px;
+ }
+ .sidebar-box {
+ background: #ecf0f1;
+ padding: 1.5rem;
+ border-radius: 8px;
+ margin-bottom: 1.5rem;
+ }
+ .sidebar-box h3 {
+ color: #2c3e50;
+ margin-bottom: 1rem;
+ border-bottom: 2px solid #3498db;
+ padding-bottom: 0.5rem;
+ }
+ .sidebar-box ul {
+ list-style: none;
+ }
+ .sidebar-box ul li {
+ padding: 0.5rem 0;
+ }
+ .sidebar-box a {
+ color: #3498db;
+ text-decoration: none;
+ }
+ .sidebar-box a:hover {
+ text-decoration: underline;
+ }
+ /* Articles Section - Flexbox */
+ .articles {
+ flex: 1;
+ }
+ .articles-grid {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 1.5rem;
+ }
+ .article-card {
+ flex: 1 1 calc(50% - 0.75rem);
+ background: white;
+ border: 1px solid #ddd;
+ border-radius: 8px;
+ overflow: hidden;
+ transition: transform 0.3s, box-shadow 0.3s;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ }
+ .article-card:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+ }
+ .article-img {
+ width: 100%;
+ height: 200px;
+ object-fit: cover;
+ background: #ecf0f1;
+ }
+ .article-content {
+ display: flex;
+ flex-direction: column;
+ padding: 1.5rem;
+ }
+ .article-date {
+ color: #7f8c8d;
+ font-size: 0.9rem;
+ margin-bottom: 0.5rem;
+ }
+ .article-title {
+ color: #2c3e50;
+ font-size: 1.3rem;
+ margin-bottom: 0.8rem;
+ flex-grow: 1;
+ }
+ .article-desc {
+ color: #555;
+ font-size: 0.95rem;
+ margin-bottom: 1rem;
+ }
+ .read-more {
+ display: inline-block;
+ color: #3498db;
+ text-decoration: none;
+ font-weight: bold;
+ transition: color 0.3s;
+ }
+ .read-more:hover {
+ color: #2980b9;
+ }
+ /* Footer - Flexbox */
